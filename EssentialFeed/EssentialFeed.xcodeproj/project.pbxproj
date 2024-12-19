@@ -43,12 +43,14 @@
 				FeedItemsMapper.swift,
 				HTTPClient.swift,
 				RemoteFeedLoader.swift,
+				URLSessionHTTPClient.swift,
 			);
 			target = 080EDEF021B6DA7E00813479 /* EssentialFeed */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C20999A72D13EEC5009487A8 /* Helpers */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Helpers; sourceTree = "<group>"; };
 		C2EAEF662D0FD85D0028C0DC /* Feed API */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (C2EAEF692D0FD86A0028C0DC /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = "Feed API"; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
@@ -102,6 +104,7 @@
 		080EDEFE21B6DA7E00813479 /* EssentialFeedTests */ = {
 			isa = PBXGroup;
 			children = (
+				C20999A72D13EEC5009487A8 /* Helpers */,
 				080EDF0121B6DA7E00813479 /* Info.plist */,
 				C2EAEF6A2D0FD8A00028C0DC /* RemoteFeedLoaderTests.swift */,
 				C20999A32D127F70009487A8 /* URLSessionHTTPClientTests.swift */,
@@ -162,6 +165,9 @@
 			);
 			dependencies = (
 				080EDEFD21B6DA7E00813479 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				C20999A72D13EEC5009487A8 /* Helpers */,
 			);
 			name = EssentialFeedTests;
 			productName = EssentialFeedTests;
